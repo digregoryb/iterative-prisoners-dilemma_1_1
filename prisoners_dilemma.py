@@ -1,24 +1,3 @@
-from __future__ import print_function
-
-''' 
-PrisonerDilemma.py allows hard-coding different strategies
-for the Iterative Prisoners Dilemma, the canonical game of game-theory.
-Each strategy plays 100 to 200 rounds against each other strategy.
-The results of all previous rounds within a 100-200 round stretch are known
-to both players. 
-
-play_tournament() executes the tournament and stores output in tournament.txt
-
-Players should each code their strategies in their assigned section of code.
-
-Aggregated results are stored in tournament.txt
-
-Unpublished work (c)2013 Project Lead The Way
-CSE Project 1.3.5 Collaborating on a Project
-Draft, Do Not Distribute
-Version 8/23/2013 
-'''
-
 import random
 def play_round(player1, player2, history1, history2, score1, score2):
     '''
@@ -112,8 +91,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     if player == 0:
         if getting_team_name:
             return 'loyal'
-        else:
-            return 'c'
+        
 
     
         
@@ -129,7 +107,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         if getting_team_name:
             return 'backstabber'
         else:
-            return 'b'
+         
 
 
 
